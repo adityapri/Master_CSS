@@ -1,0 +1,20 @@
+/* This Part talks specific to grid-row-template */
+
+*{
+    margin :  0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-auto-rows: 2fr;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1px;
+}
+
+.box{
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
