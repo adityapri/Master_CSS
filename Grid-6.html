@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'content content content aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media only screen and (min-width: 300px)and (max-width: 576px) {
+            body {
+                background-color: cyan;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'content content content content'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 576px)and (max-width: 768px) {
+            body {
+                background-color: lightpink;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'content content content content'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 768px)and (max-width: 992px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'content content content content'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: content;
+        }
+
+        aside {
+            grid-area: aside;
+            text-align: center;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .box {
+            background-color: antiquewhite;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        nav,
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="box">
+            <span>Why Renaissance</span>
+            <span>Stories</span>
+            <span>Blogs</span>
+            <span>Features</span>
+        </nav>
+        <section class="box">
+            We are a social enterprise, helping students to learn to code and be Industry ready. Our incredible past
+            students work at Amazon, Google, Microsoft, Samsung, Flipkart, Zynga and many more companies.
+
+            We take pride in a team of amazing volunteers, pulling up our courses and a brilliant team of passionate and
+            empathetic teachers. Get on with your journey in coding, with us.
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sit minus asperiores quo quaerat quasi
+            impedit deleniti earum explicabo? Voluptatibus culpa molestiae fugit non pariatur, veritatis ipsam explicabo
+            quam quo maxime animi inventore laborum quibusdam. Dicta voluptatibus, cupiditate, ipsa natus minima unde et
+            laborum eaque sunt harum amet maiores impedit error nam? Facilis dolor aliquid odit quisquam laboriosam,
+            minus cumque totam non delectus possimus a earum quos, dolore omnis nemo ad suscipit eius, corporis
+            repudiandae ea nobis enim velit blanditiis tempora. Assumenda quibusdam voluptas ipsam quo porro? Aperiam
+            suscipit quam explicabo, quis, dignissimos minima quia magni illum beatae exercitationem itaque in quos
+            similique quasi? Ipsa ab quis vero nesciunt consequuntur voluptatibus nulla saepe illo ullam reiciendis id
+            veritatis velit ducimus dolorem impedit, laborum, ex mollitia error eius, eos non. Suscipit dolore expedita
+            eos autem molestiae mollitia fugit, fuga natus quibusdam totam explicabo vitae nam consequuntur. Inventore,
+            id ex quae, alias enim ea exercitationem officiis perspiciatis placeat modi labore hic quam a maxime
+            deleniti nulla ipsum nihil esse. Doloremque est sint dolorem, consectetur animi voluptatem iste commodi.
+            Iusto iste sequi minima quibusdam deleniti? Excepturi, provident voluptas, laudantium aliquam nulla
+            praesentium repudiandae est incidunt a iusto rerum, corrupti natus ipsum similique aspernatur.
+        </section>
+        <aside class="box">
+            <h1>Master Data Structure and Algorithms</h1>
+        </aside>
+        <footer class="box">
+            @copyright PP 2022.
+        </footer>
+    </div>
+</body>
+
+</html>
