@@ -1,0 +1,19 @@
+
+
+/*    Points to ponder:
+    layout responsiveness has been taken into consideration,that is achieved using
+repeat(autofit,minmax()) */
+
+.container{
+  display: grid;
+  /* grid-template-columns: 150px 150px 150px; */
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  /* justify-content: center; */
+}
+
+.box{
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    padding: 30px;
+}
